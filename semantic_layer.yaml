@@ -1,0 +1,27 @@
+metrics:
+  revenue:
+    column: Revenue
+    type: sum
+    definition: Total revenue generated from sales.
+
+  cost:
+    column: Cost
+    type: sum
+    definition: Total operational cost.
+
+  profit:
+    formula: Revenue - Cost
+    type: sum
+    definition: Total profit after cost.
+
+  margin:
+    formula: Profit / Revenue * 100
+    type: ratio
+    definition: Profit as a percentage of revenue.
+
+dimensions:
+  quarter:
+    column: Quarter
+
+  region:
+    column: Region
